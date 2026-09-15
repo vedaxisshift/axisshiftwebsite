@@ -20,7 +20,7 @@ export default function DemoPage() {
 
         <div className="mt-10 overflow-hidden rounded-2xl border border-line-soft">
           <iframe
-            src="https://tally.so/r/aQRJPv?transparentBackground=1"
+            src="https://tally.so/embed/aQRJPv?alignLeft=1&hideTitle=1&transparentBackground=1"
             width="100%"
             height="950"
             frameBorder="0"
