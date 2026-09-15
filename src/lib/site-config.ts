@@ -13,8 +13,8 @@ export const demoMailto = `mailto:${siteConfig.email}?subject=${encodeURICompone
 )}`;
 
 export const navLinks = [
-  { label: "The Problem", href: "#the-problem" },
-  { label: "What We Build", href: "#what-we-build" },
-  { label: "Practical AI", href: "#practical-ai" },
-  { label: "How It Works", href: "#how-it-works" },
+  { label: "The Problem", href: "/#problem" },
+  { label: "What We Build", href: "/#what-we-build" },
+  { label: "Practical AI", href: "/#practical-ai" },
+  { label: "How It Works", href: "/#how-it-works" },
 ] as const;
