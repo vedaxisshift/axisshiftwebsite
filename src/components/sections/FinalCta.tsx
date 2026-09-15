@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
-import { demoMailto } from "@/lib/site-config";
 import { finalCta } from "@/content/copy";
 
 export function FinalCta() {
@@ -16,7 +15,7 @@ export function FinalCta() {
             <p className="mt-4 text-balance text-base leading-relaxed text-mist">
               {finalCta.body}
             </p>
-            <Button href={demoMailto} className="mt-8">
+            <Button href="/demo" className="mt-8">
               {finalCta.cta}
             </Button>
           </div>
