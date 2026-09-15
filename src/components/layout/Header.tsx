@@ -73,27 +73,29 @@ export function Header() {
       </Container>
 
       {open && (
-        <div
-          id="mobile-nav"
-          className="fixed inset-x-0 top-[65px] bottom-0 overflow-y-auto border-t border-line-soft bg-navy-950 px-6 pb-8 pt-4 xl:hidden"
+  <div className="absolute left-0 right-0 top-full z-[60] border-b border-line-soft bg-navy-950 shadow-2xl xl:hidden">
+    <Container className="flex flex-col gap-1 py-5">
+      {navLinks.map((link) => (
+        <a
+          key={link.href}
+          href={link.href}
+          onClick={() => setOpen(false)}
+          className="rounded-lg px-4 py-3 text-base font-medium text-ink transition-colors hover:bg-navy-800"
         >
-          <nav aria-label="Mobile" className="flex flex-col gap-1">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-base font-medium text-mist transition-colors hover:bg-navy-800 hover:text-ink"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <Button href="/demo" className="mt-4 w-full">
-            Request a Private Demo
-          </Button>
-        </div>
-      )}
+          {link.label}
+        </a>
+      ))}
+
+      <Button
+        href="/demo"
+        className="mt-4 w-full"
+        onClick={() => setOpen(false)}
+      >
+        Request a Private Demo
+      </Button>
+    </Container>
+  </div>
+)}
     </header>
   );
 }
