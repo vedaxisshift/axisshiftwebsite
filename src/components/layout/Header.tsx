@@ -38,7 +38,7 @@ export function Header() {
       }`}
     >
       <Container className="flex items-center justify-between py-3.5">
-        <a href="#top" className="shrink-0" aria-label="Axis Shift Data Systems home">
+        <a href="/#top" className="shrink-0" aria-label="Axis Shift Data Systems home">
           <Logo />
         </a>
 
