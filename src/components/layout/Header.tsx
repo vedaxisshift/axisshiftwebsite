@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
-import { demoMailto, navLinks } from "@/lib/site-config";
+import { navLinks } from "@/lib/site-config";
 
 export function Header() {
   const [open, setOpen] = useState(false);
