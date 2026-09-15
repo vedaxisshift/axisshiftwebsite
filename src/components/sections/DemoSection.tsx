@@ -2,7 +2,6 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
-import { demoMailto } from "@/lib/site-config";
 import { demoSection } from "@/content/copy";
 
 export function DemoSection() {
@@ -23,7 +22,7 @@ export function DemoSection() {
             {demoSection.body}
           </p>
           <p className="mt-4 text-sm text-mist-dim">{demoSection.note}</p>
-          <Button href={demoMailto} variant="outline" className="mt-8">
+          <Button href="/demo" variant="outline" className="mt-8">
             {demoSection.cta}
           </Button>
         </div>
