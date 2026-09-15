@@ -2,7 +2,7 @@ export default function DemoPage() {
   return (
     <main className="min-h-screen bg-navy-950 px-6 py-20 text-ink">
       <div className="mx-auto max-w-5xl">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-300">
             Axis Shift Data Systems
           </p>
