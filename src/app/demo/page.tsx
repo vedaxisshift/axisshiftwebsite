@@ -1,7 +1,7 @@
 export default function DemoPage() {
   return (
     <main className="min-h-screen bg-navy-950 px-6 py-20 text-ink">
-      <div className="mx-auto max-w-5xl">
+      <div className="mx-auto max-w-3xl">
         <div className="mx-auto max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-300">
             Axis Shift Data Systems
@@ -18,16 +18,19 @@ export default function DemoPage() {
           </p>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-2xl border border-line-soft">
+        <div className="mt-10 overflow-hidden rounded-xl">
           <iframe
             src="https://tally.so/embed/aQRJPv?alignLeft=1&hideTitle=1"
             width="100%"
-            height="950"
+            height="1250"
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
             title="Request a Private Demo"
-            style={{ border: "none" }}
+            style={{
+              border: "none",
+              background: "transparent",
+            }}
           />
         </div>
       </div>
