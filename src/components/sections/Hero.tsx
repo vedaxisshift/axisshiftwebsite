@@ -3,7 +3,6 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
-import { demoMailto } from "@/lib/site-config";
 import { hero } from "@/content/copy";
 
 export function Hero() {
@@ -26,7 +25,7 @@ export function Hero() {
             {hero.body}
           </p>
           <div className="mt-9 flex flex-col gap-3.5 sm:flex-row sm:items-center">
-            <Button href={demoMailto}>{hero.primaryCta}</Button>
+            <Button href="/demo">{hero.primaryCta}</Button>
             <Button href={hero.secondaryHref} variant="outline" showArrow={false}>
               {hero.secondaryCta}
             </Button>
