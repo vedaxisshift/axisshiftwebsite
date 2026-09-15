@@ -6,7 +6,7 @@ import { operatingProblem } from "@/content/copy";
 
 export function OperatingProblem() {
   return (
-    <SectionShell id={operatingProblem.id} tone="navy">
+    <SectionShell id="problem" tone="navy">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
         <Reveal>
           <SectionHeading
