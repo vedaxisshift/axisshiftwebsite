@@ -55,7 +55,7 @@ export function Header() {
         </nav>
 
         <div className="hidden xl:block">
-          <Button href={demoMailto} className="whitespace-nowrap px-5 py-2.5 text-sm">
+          <Button href="/demo" className="whitespace-nowrap px-5 py-2.5 text-sm">
             Request a Private Demo
           </Button>
         </div>
@@ -89,7 +89,7 @@ export function Header() {
               </a>
             ))}
           </nav>
-          <Button href={demoMailto} className="mt-4 w-full">
+          <Button href="/demo" className="mt-4 w-full">
             Request a Private Demo
           </Button>
         </div>
