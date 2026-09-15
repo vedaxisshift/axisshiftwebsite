@@ -21,7 +21,7 @@ export const hero = {
 };
 
 export const operatingProblem = {
-  id: "the-problem",
+  id: "problem",
   eyebrow: "The visibility gap",
   headline: "Your business data is probably more scattered than you think.",
   body: "Many businesses rely on spreadsheets, notes, CRM tools, task lists, reports, and manual follow-ups. The result is missed opportunities, weak reporting, duplicate work, and unreliable outputs when important decisions depend on incomplete records.",
