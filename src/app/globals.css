@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand */
+  --color-teal-900: #0a4a50;
+  --color-teal-800: #0d6b73;
+  --color-teal-700: #117f88;
+  --color-teal-500: #2ea8ae;
+  --color-teal-400: #4bc3c8;
+  --color-cyan-glow: #5fd7de;
+
+  --color-navy-950: #0a1218;
+  --color-navy-900: #0e1a22;
+  --color-navy-800: #13232c;
+  --color-navy-700: #1b323d;
+
+  --color-charcoal: #1f2933;
+  --color-ink: #e9eef0;
+  --color-mist: #b9c4c9;
+  --color-mist-dim: #8fa0a6;
+  --color-line: rgba(233, 238, 240, 0.12);
+  --color-line-soft: rgba(233, 238, 240, 0.08);
+}
+
+@theme inline {
+  --color-teal-900: var(--color-teal-900);
+  --color-teal-800: var(--color-teal-800);
+  --color-teal-700: var(--color-teal-700);
+  --color-teal-500: var(--color-teal-500);
+  --color-teal-400: var(--color-teal-400);
+  --color-cyan-glow: var(--color-cyan-glow);
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-charcoal: var(--color-charcoal);
+  --color-ink: var(--color-ink);
+  --color-mist: var(--color-mist);
+  --color-mist-dim: var(--color-mist-dim);
+  --color-line: var(--color-line);
+  --color-line-soft: var(--color-line-soft);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--color-navy-950);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-teal-500);
+  color: var(--color-navy-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cyan-glow);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Reveal-on-scroll primitive: opts in via JS adding [data-revealed] */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-reveal][data-revealed="true"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
