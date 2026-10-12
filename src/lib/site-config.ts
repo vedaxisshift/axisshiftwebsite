@@ -9,7 +9,7 @@ export const siteConfig = {
 } as const;
 
 export const demoMailto = `mailto:${siteConfig.email}?subject=${encodeURIComponent(
-  "Private Demo Request"
+  "15-minute call request"
 )}`;
 
 export const navLinks = [

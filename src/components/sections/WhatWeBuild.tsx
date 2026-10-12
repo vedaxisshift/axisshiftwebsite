@@ -1,30 +1,10 @@
-import {
-  LayoutDashboard,
-  Building2,
-  ListTodo,
-  GitBranch,
-  StickyNote,
-  ShieldCheck,
-  Sparkles,
-  FileBarChart,
-  Radar,
-} from "lucide-react";
+import { LayoutDashboard, ShieldCheck, Sparkles, FileBarChart } from "lucide-react";
 import { SectionShell } from "@/components/ui/SectionShell";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal } from "@/components/ui/Reveal";
 import { whatWeBuild } from "@/content/copy";
 
-const icons = [
-  LayoutDashboard,
-  Building2,
-  ListTodo,
-  GitBranch,
-  StickyNote,
-  ShieldCheck,
-  Sparkles,
-  FileBarChart,
-  Radar,
-];
+const icons = [LayoutDashboard, ShieldCheck, Sparkles, FileBarChart];
 
 export function WhatWeBuild() {
   return (
@@ -39,11 +19,11 @@ export function WhatWeBuild() {
         />
       </Reveal>
 
-      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {whatWeBuild.items.map((item, i) => {
           const Icon = icons[i];
           return (
-            <Reveal key={item.title} delay={(i % 3) * 80}>
+            <Reveal key={item.title} delay={i * 80}>
               <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition-colors duration-200 hover:border-white/20 hover:bg-white/[0.07]">
                 <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-cyan-glow">
                   <Icon size={19} strokeWidth={1.75} aria-hidden="true" />

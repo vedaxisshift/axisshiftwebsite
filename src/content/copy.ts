@@ -2,10 +2,10 @@
 // from the original Axis Shift Framer site — edit copy here, not in components.
 
 export const hero = {
-  eyebrow: "Private internal systems for small businesses.",
-  headline: "Scattered business data. One clear operating view.",
-  body: "Axis Shift helps service businesses bring information from spreadsheets, accounting tools, CRMs, and operational systems together so teams spend less time searching, reporting, and following up manually.",
-  primaryCta: "Request a Private Demo",
+  eyebrow: "Data and automation for small service businesses.",
+  headline: "Your business data, finally in one place and working for you.",
+  body: "Axis Shift connects the tools you already use, cleans up the data, and automates the busywork: flagging what needs attention and drafting next steps for you to approve.",
+  primaryCta: "Book a 15-minute call",
   secondaryCta: "See How It Works",
   secondaryHref: "#how-it-works",
   footnote: "Built for small businesses that need clearer visibility before deeper automation.",
@@ -30,6 +30,26 @@ export const operatingProblem = {
     "Follow-ups that disappear between systems",
     "Reporting that depends on manual cleanup",
     "Decisions made without a reliable picture",
+  ],
+};
+
+export const forExample = {
+  id: "examples",
+  eyebrow: "For example",
+  headline: "What this looks like in a real business.",
+  items: [
+    {
+      title: "Staffing firms",
+      body: "Know about every expiring nurse license or certification weeks ahead, with reminder messages ready for your approval.",
+    },
+    {
+      title: "Any service business",
+      body: "Catch hours that were worked but never billed, before the money is gone.",
+    },
+    {
+      title: "Owners",
+      body: "Get a short weekly summary of what needs attention, instead of digging through five tools.",
+    },
   ],
 };
 
@@ -67,40 +87,20 @@ export const whatWeBuild = {
   headline: "One internal system for the records that drive your business.",
   items: [
     {
-      title: "See the business in one place",
-      body: "Review the numbers, tasks, customers, and follow-ups that matter without opening several systems.",
+      title: "One dashboard",
+      body: "The numbers, people, and deadlines that matter, without opening several systems.",
     },
     {
-      title: "Company and contact tracking",
-      body: "The right relationship details in one usable view.",
+      title: "Problem and data alerts",
+      body: "Spot expiring items, missing records, and mismatches before they cost you.",
     },
     {
-      title: "Task and follow-up visibility",
-      body: "See what needs attention before it becomes overdue.",
-    },
-    {
-      title: "Opportunity and pipeline tracking",
-      body: "Keep active work visible from initial conversation to next step.",
-    },
-    {
-      title: "Business notes and activity history",
-      body: "Useful context retained alongside the work it relates to.",
-    },
-    {
-      title: "Data quality monitor",
-      body: "Spot missing, stale, and inconsistent records early.",
-    },
-    {
-      title: "AI-generated business summaries",
-      body: "Approved context, surfaced as practical operational summaries.",
+      title: "AI-drafted follow-ups",
+      body: "Reminders, summaries, and next steps drafted for you to review and approve.",
     },
     {
       title: "Owner-ready reports",
-      body: "Decision-ready reporting without the usual manual chase.",
-    },
-    {
-      title: "Company-level 360 views",
-      body: "See the relationships, activity, data health, and next actions together.",
+      body: "Clear reporting without the usual manual chase.",
     },
   ],
 };
@@ -170,32 +170,22 @@ export const builtFor = {
 export const howItWorks = {
   id: "how-it-works",
   eyebrow: "How it works",
-  headline: "From scattered records to a usable command center.",
+  headline: "Start small. Grow when it pays off.",
   steps: [
     {
       number: "01",
-      title: "Review current data and workflows",
-      body: "Map the records, handoffs, and reporting gaps that matter.",
+      title: "A 15-minute call",
+      body: "We talk about where your data lives and what slows your team down.",
     },
     {
       number: "02",
-      title: "Organize core business records",
-      body: "Create a clear structure for companies, contacts, activity, and tasks.",
+      title: "One small first project",
+      body: "We fix one real problem in a couple of weeks, using the tools you already have.",
     },
     {
       number: "03",
-      title: "Build the internal command center",
-      body: "Bring key operational views into one private working system.",
-    },
-    {
-      number: "04",
-      title: "Add practical AI insights and reports",
-      body: "Surface useful questions, summaries, and owner-ready reporting.",
-    },
-    {
-      number: "05",
-      title: "Test, document, and hand off",
-      body: "Validate the workflow, document the system, and transition it to the team.",
+      title: "Grow from there",
+      body: "Add more connections and automation only when it's clearly paying off.",
     },
   ],
 };
@@ -210,7 +200,7 @@ export const demoSection = {
 };
 
 export const finalCta = {
-  headline: "Your business should not have to search five places for one answer.",
-  body: "See how Axis Shift can bring the important information together.",
-  cta: "Request a Private Demo",
+  headline: "Stop searching five places for one answer.",
+  body: "Tell us where your information is scattered, and we'll show you what one clear view could look like.",
+  cta: "Book a 15-minute call",
 };
