@@ -68,7 +68,7 @@ export function Header() {
             href="/demo"
             className="whitespace-nowrap px-5 py-2.5 text-sm"
           >
-            Request a Private Demo
+            Book a 15-minute call
           </Button>
         </div>
 
@@ -102,7 +102,7 @@ export function Header() {
             ))}
 
             <Button href="/demo" className="mt-4 w-full">
-              Request a Private Demo
+              Book a 15-minute call
             </Button>
           </Container>
         </div>

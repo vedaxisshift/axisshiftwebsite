@@ -8,13 +8,13 @@ export default function DemoPage() {
           </p>
 
           <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-            Request a Private Demo
+            Book a 15-minute call
           </h1>
 
           <p className="mt-5 text-base leading-relaxed text-mist sm:text-lg">
             Tell us a little about your business and where information is
-            getting difficult to manage. We’ll review your request and follow
-            up shortly.
+            getting difficult to manage. We’ll follow up shortly to set up a
+            quick, no-pressure call.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ export default function DemoPage() {
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
-            title="Request a Private Demo"
+            title="Book a 15-minute call"
             style={{
               border: "none",
               background: "transparent",

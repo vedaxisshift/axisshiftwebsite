@@ -15,7 +15,7 @@ export function HowItWorks() {
         />
       </Reveal>
 
-      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {howItWorks.steps.map((step, i) => (
           <Reveal key={step.number} delay={i * 70}>
             <div className="relative h-full rounded-2xl border border-line-soft bg-navy-800/50 p-5">
