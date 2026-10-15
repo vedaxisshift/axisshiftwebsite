@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { LogIn, Mail } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { siteConfig } from "@/lib/site-config";
@@ -15,6 +15,13 @@ export function Footer() {
           >
             <Mail size={15} aria-hidden="true" />
             {siteConfig.email}
+          </a>
+          <a
+            href={siteConfig.clientPortalUrl}
+            className="inline-flex items-center gap-2 text-sm text-mist transition-colors hover:text-teal-400"
+          >
+            <LogIn size={15} aria-hidden="true" />
+            Client login
           </a>
         </div>
 
