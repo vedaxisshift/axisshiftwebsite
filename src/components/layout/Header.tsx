@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { LogIn, Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
-import { navLinks } from "@/lib/site-config";
+import { navLinks, siteConfig } from "@/lib/site-config";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -63,7 +63,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden xl:block">
+        <div className="hidden items-center gap-5 xl:flex">
+          <a
+            href={siteConfig.clientPortalUrl}
+            className="inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium text-mist transition-colors duration-150 hover:text-ink"
+          >
+            <LogIn size={15} aria-hidden="true" />
+            Client login
+          </a>
           <Button
             href="/demo"
             className="whitespace-nowrap px-5 py-2.5 text-sm"
@@ -100,6 +107,15 @@ export function Header() {
                 {link.label}
               </a>
             ))}
+
+            <a
+              href={siteConfig.clientPortalUrl}
+              onClick={() => setOpen(false)}
+              className="inline-flex items-center gap-2 rounded-lg px-4 py-3 text-base font-medium text-ink transition-colors hover:bg-navy-800"
+            >
+              <LogIn size={18} aria-hidden="true" />
+              Client login
+            </a>
 
             <Button href="/demo" className="mt-4 w-full">
               Book a 15-minute call
