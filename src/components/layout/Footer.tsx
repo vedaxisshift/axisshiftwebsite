@@ -28,6 +28,11 @@ export function Footer() {
         <div className="flex flex-col gap-1.5 text-sm text-mist-dim sm:text-right">
           <p className="text-mist">{siteConfig.tagline}</p>
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <nav aria-label="Legal" className="flex flex-wrap gap-x-4 gap-y-1 sm:justify-end">
+            <a href="/privacy/" className="transition-colors hover:text-teal-400">Privacy Policy</a>
+            <a href="/terms/" className="transition-colors hover:text-teal-400">Terms of Service</a>
+            <a href="/sms/" className="transition-colors hover:text-teal-400">Text Sign-up</a>
+          </nav>
         </div>
       </Container>
     </footer>
