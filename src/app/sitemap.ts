@@ -12,10 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${siteConfig.url}/seller-updates/`,
+      url: `${siteConfig.url}/services/`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.6,
     },
     ...["/sms/", "/privacy/", "/terms/"].map((path) => ({
       url: `${siteConfig.url}${path}`,

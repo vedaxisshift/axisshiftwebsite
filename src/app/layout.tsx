@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "business operations",
-    "data systems",
-    "internal dashboards",
-    "reporting automation",
-    "service business software",
-    "practical AI for business",
+    "seller updates",
+    "listing agent",
+    "Atlanta real estate",
+    "showing feedback report",
+    "real estate automation",
+    "data and AI automation",
   ],
   authors: [{ name: siteConfig.name }],
   openGraph: {
