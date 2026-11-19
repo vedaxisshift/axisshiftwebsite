@@ -1,29 +1,13 @@
-import { Hero } from "@/components/sections/Hero";
-import { OperatingProblem } from "@/components/sections/OperatingProblem";
-import { ForExample } from "@/components/sections/ForExample";
-import { TheShift } from "@/components/sections/TheShift";
-import { WhatWeBuild } from "@/components/sections/WhatWeBuild";
-import { PracticalAi } from "@/components/sections/PracticalAi";
-import { RecordIntake } from "@/components/sections/RecordIntake";
-import { HumanOversight } from "@/components/sections/HumanOversight";
-import { BuiltFor } from "@/components/sections/BuiltFor";
-import { HowItWorks } from "@/components/sections/HowItWorks";
-import { FinalCta } from "@/components/sections/FinalCta";
+import type { Metadata } from "next";
+import { SellerUpdatesContent } from "@/components/seller/SellerUpdatesContent";
+
+export const metadata: Metadata = {
+  title: { absolute: "Axis Shift | Friday Seller Updates for Atlanta Listing Agents" },
+  description:
+    "A one-page recap of showings, buyer feedback and market activity lands in your inbox every Friday, ready to forward to your sellers. Free 6-week pilot for 5 Atlanta agents.",
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <OperatingProblem />
-      <ForExample />
-      <TheShift />
-      <WhatWeBuild />
-      <PracticalAi />
-      <RecordIntake />
-      <HumanOversight />
-      <BuiltFor />
-      <HowItWorks />
-      <FinalCta />
-    </>
-  );
+  return <SellerUpdatesContent />;
 }

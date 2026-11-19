@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
 import { navLinks, siteConfig } from "@/lib/site-config";
+import { pilotMailto } from "@/content/seller-updates";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -72,10 +73,10 @@ export function Header() {
             Client login
           </a>
           <Button
-            href="/demo"
+            href={pilotMailto}
             className="whitespace-nowrap px-5 py-2.5 text-sm"
           >
-            Book a 15-minute call
+            Claim a pilot spot
           </Button>
         </div>
 
@@ -117,8 +118,8 @@ export function Header() {
               Client login
             </a>
 
-            <Button href="/demo" className="mt-4 w-full">
-              Book a 15-minute call
+            <Button href={pilotMailto} className="mt-4 w-full">
+              Claim a pilot spot
             </Button>
           </Container>
         </div>
